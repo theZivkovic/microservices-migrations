@@ -12,6 +12,7 @@ databaseChangeLog:
                   constraints:
                     primaryKey: true
                     nullable: false
+                  defaultValueComputed: "gen_random_uuid()"
               - column:
                   name: title
                   type: varchar(255)
@@ -38,12 +39,3 @@ databaseChangeLog:
                   type: timestamp
                   constraints:
                     nullable: true
-  - changeSet:
-      id: 001-create-items-02
-      author: dejan.zivkovic
-      changes:
-        - addDefaultValue:
-            columnDataType: UUID
-            columnName: id
-            defaultValueComputed: "uuid()"
-            tableName: items

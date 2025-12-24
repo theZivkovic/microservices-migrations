@@ -1,3 +1,5 @@
 databaseChangeLog:
   - include:
       file: changelog/changes/001-create-items-table.yaml
+  - include:
+      file: changelog/changes/002-create-audit-logs-table.yaml

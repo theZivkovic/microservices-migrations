@@ -4,4 +4,4 @@ WORKDIR /app
 COPY changelog ./changelog/
 COPY liquibase.properties ./liquibase.properties
 
-ENTRYPOINT [ "tail", "-f", "/dev/null" ]
+ENTRYPOINT [ "liquibase", "update" ]

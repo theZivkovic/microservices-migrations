@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: 001-create-items
+      id: 001-create-items-01
       author: dejan.zivkovic
       changes:
         - createTable:
@@ -39,7 +39,7 @@ databaseChangeLog:
                   constraints:
                     nullable: true
   - changeSet:
-      id: 001-create-items
+      id: 001-create-items-02
       author: dejan.zivkovic
       changes:
         - addDefaultValue:

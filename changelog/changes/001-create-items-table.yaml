@@ -38,3 +38,12 @@ databaseChangeLog:
                   type: timestamp
                   constraints:
                     nullable: true
+  - changeSet:
+      id: 001-create-items
+      author: dejan.zivkovic
+      changes:
+        - addDefaultValue:
+            columnDataType: UUID
+            columnName: id
+            defaultValueComputed: "uuid()"
+            tableName: items
